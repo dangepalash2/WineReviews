@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+<servlet>
+	<servlet-name>TimePass</servlet-name>
+	<servlet-class>com.google.appengine.TimePass</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>TimePass</servlet-name>
+  <url-pattern>/TimePass</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Top10Wines</servlet-name>
+	<servlet-class>com.google.appengine.Top10Wines</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>Top10Wines</servlet-name>
+  <url-pattern>/Top10Wines</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>SearchEngine</servlet-name>
+	<servlet-class>com.google.appengine.SearchEngine</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>SearchEngine</servlet-name>
+  <url-pattern>/SearchEngine</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>MostExpensiveWine</servlet-name>
+	<servlet-class>com.google.appengine.MostExpensiveWine</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>MostExpensiveWine</servlet-name>
+  <url-pattern>/MostExpensiveWine</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>PricePrediction</servlet-name>
+	<servlet-class>com.google.appengine.PricePrediction</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>PricePrediction</servlet-name>
+  <url-pattern>/PricePrediction</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>PredictedData</servlet-name>
+	<servlet-class>com.google.appengine.PredictedData</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>PredictedData</servlet-name>
+  <url-pattern>/PredictedData</url-pattern>
+</servlet-mapping>
+
+</web-app>
